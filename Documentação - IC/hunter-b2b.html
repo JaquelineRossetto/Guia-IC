@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Indicadores regionais</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Validação da base hunter - B2B</h1>
+    <hr />
+    <ol>
+      <li>
+        Abra o PowerBI (neste
+        <a
+          class="link_url"
+          href="https://app.powerbi.com/groups/me/apps/dd9cddf1-c0fc-4e43-a036-44d42f20bbda/reports/a8dfcb37-d36b-41fc-bd54-a9a6e95eac09/ReportSection853111b6e33d4b477725?ctid=9744600e-3e04-492e-baa1-25ec245c6f10&experience=power-bi&clientSideAuth=0"
+          target="_blank"
+          >link)
+        </a>
+        <br />
+        No menu lateral da esquerda vá em Hunter B2B -> Base – analítico -> na
+        parte superior central da tela clique no retângulo escrito 'Base
+        analítico' -> nos filtros deixe marcado todas as opções como ‘todos’,
+        exceto ANOMES que deve ser o mês atual (como '202310', '202311', etc) e
+        em TECNOLOGIA deve ser FTTH.
+      </li>
+      <img
+        src="Imagens/B2B/passo1.png"
+        class="img_tutorial"
+        alt="escolha o mês atual!"
+      />
+      <li>
+        O título da tabela está em uma barra roxa logo abaixo dos filtros,
+        clique no canto direito dessa área, nos 3 pontinhos -> exportar dados ->
+        dados com layout atual -> exportar
+        <br>o arquivo vai ser salvo automaticamente na sua pasta de downloads.
+      </li>
+      <img
+        src="Imagens/B2B/passo2.png"
+        class="Simg_tutorial"
+        alt="clique nos 3 pontinhos"
+      />
+     
+      <li>
+          Abra esse arquivo que foi gerado e verifique se há linhas em branco nas colunas
+          ‘TIPO_REG’ e ‘REGIONAL’. Caso haja, é necessário achar o correspondente dessa linha em
+          bases dos dias anteriores e preencher com a informação que falta.<br />
+          *A linha que costuma vir em branco é da cidade 'SANT ANA DO LIVRAMENTO'. Preencha com as informações:
+          TIPO_REG -> FSP e REGIONAL -> SUL
+      </li>
+
+      <li>
+        Feito isso, este arquivo deve ser salvo na mesma pasta do arquivo 'Base B2B NEW', com
+        o nome de 'Base', substituindo o arquivo que já havia ali e que foi
+        usado no dia anterior. Salve ele com esse novo nome na pasta (neste
+        <a
+          class="link_url"
+          href="https://telefonicacorp-my.sharepoint.com/personal/larissa_visnadi_telefonica_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Flarissa%5Fvisnadi%5Ftelefonica%5Fcom%2FDocuments%2FDesktop%2FDocs%2FPBIX%2FVivo%2FBases%2FB2B&ct=1702640965706&or=Teams%2DHL&ga=1"
+          target="_blank"
+          >link) e feche o arquivo.
+        </a>
+      </li>
+      Nessa mesma pasta agora abra o arquivo do excel chamado ‘Base B2B NEW’.
+      </li>
+      <li>
+        Neste excel vá na aba ‘Apoio’ e mude a data que está em uma célula
+        destacada em amarelo para a mesma data que está no powerBI (do passo 1).
+
+        <img src="Imagens/B2B/passo4.png" id="passo4B2B" alt="mude a data" />
+        <img src="Imagens/B2B/passo4.1.png" id="passo41B2B" alt="data do PBI" />
+      </li>
+<li>
+Vá na aba 'ATUALIZAR' e clique com o direito em qualquer local da tabela e clique em 'atualizar', em seguida
+selecione tudo (a partir da linha 3) e copie.
+
+</li>
+
+      <li>
+        Vá na aba ‘BASE’ -> no filtro da coluna A (mês) selecione somente o mês
+        atual (por exemplo '202310') -> selecione todas as informações que estão
+        na tabela e apague-as. Remova o filtro e cole o que foi copiado logo abaixo da última linha preenchida.
+       <br> ***ATENÇÃO: ESCOLHA A OPÇÃO 'COLAR VALORES'. NÃO COLE COM AS FÓRMULAS.
+
+      </li>
+      
+      <li>
+        Em seguida preencha as colunas com as suas respectivas fórmulas, copiando a última linha do mês
+        anterior e colando nas células em branco do mês atual. (São as colunas de cor azul: G - V - Y - Z - AA - AB - AC).
+        
+          Agora vamos fazer as alterações manuais:
+          <li>
+            Vá primeiro na coluna H, selecione o filtro ‘SP’, vá na coluna G e
+            pesquise no filtro as seguintes palavras:
+
+            <br /><br />
+            ALEA - VIGGO - GRAMCELL - COMMCENTER - FMO - WESTCEL - LEVYCOM - AMC
+            - PROJETA - CRONOLOGICA - ITACELL - SAMTEL - TATUI - CEL CELULARES -
+            TANIA - ARTCELL
+
+            <br /><br />
+            Tudo que tiver com esses nomes, mas em alguma variação deles é para
+            mudar para a palavra certa. Exemplo: se estiver escrito
+            ‘VIGGOSULPR’, mude só para ‘VIGGO’. As palavras mais problemáticas
+            costumam ser 'ALEA', 'VIGGO' e 'GRAMCELL'.
+          </li>
+
+          <li>
+            Remova o filtro, vá na coluna D (CANAL), selecione todas as linhas e
+            aperte ‘CTRL + L’ para substituir a palavra ‘TORDESILHAS’ por ‘PAP’
+            e clique em 'substituir tudo'.
+          </li>
+          <li>
+            Na coluna I (LOG_VNDR) aplique o filtro para a palavra ‘DIRETO’ e
+            selecione somente o PREMIUM SP e SÃO PAULO (se tiver, geralmente
+            este último costuma aparecer na lista mais para o final do mês). Vá
+            na coluna D (CANAL) e substitua as células escritas ‘LLPP’ por
+            ‘PRIME PRESENCIAL’. Agora vá na coluna Y (Seção) e troque o que
+            estiver escrito ‘FSP’ por ‘SP’.
+          </li>
+          <li>
+            Remova o filtro novamente. Vá na coluna Y (Seção) e filtre ‘FSP’. Vá
+            na coluna H (REGIONAL) e filtre ‘SP’ e na K (COD_VENDA) filtre ‘EMBU
+            DAS ARTES’. Observe na coluna D (CANAL) em quais linhas está escrito
+            ‘PAP’, siga essas linhas até a coluna K e troque a palavra ‘EMBU DAS
+            ARTES’ por apenas ‘EMBU’.
+            <br />
+            *ATENÇÃO: na coluna D, nas celulas escritas ‘revenda’ não é para
+            alterar nada, somente mude as que estiver escrito 'PAP.'
+          </li>
+        </ul>
+      </li>
+      <li>
+        Agora vá na aba ‘Planilha 2’ -> clique com o
+        direito na primeira tabela e ‘atualizar’
+      </li>
+      <img
+        src="Imagens/B2B/passo11.png"
+        class="Simg_tutorial"
+        alt="clique nos 3 pontinhos"
+      />
+
+      <li>
+        Remova o filtro -> vá nas ferramentas do excel, em ‘Dados’ -> ‘Editar
+        links’ -> ‘Abrir fonte’.
+        <br />
+        *No excel que abrir somente dê ok em todos os avisos e volte no arquivo 'Base B2B NEW' na aba 'BASE',
+        aplique os filtros na tabela:coluna Y -> 'FSP'
+                                    coluna X -> '11 (GSP)', '11 (SPC)', '12 + 13 (LITORAL)', '16 + 17 (RIBEIRAO PRETO)', '19 (CAMPINAS)'
+                                    coluna A -> mês atual
+        <br>
+        E conte quantas linhas tem. Geralmente fica em torno de 20 a 40 (caso dê um número muito mais alto provavelmente não foi atualizado o procv corretamente, ai é necessário fechar o outro arquivo e abri-lo novamente).                            
+        <br>***ATENÇÃO: APÓS ESSE PASSO SALVE E FECHE O ARQUIVO E NÃO ABRA MAIS, POIS SENÃO REVERTE ALGUMAS ALTERAÇÕES E CAUSA PROBLEMAS NO PBI!!                      
+      </li>
+      <img
+        src="Imagens/B2B/passo9.png"
+        class="Simg_tutorial"
+        alt="clique nos 3 pontinhos"
+      />
+      
+      
+      <li>
+        Estando tudo feito, vá no chat do teams ‘Equipe Indicadores Comerciais - IC’ -> avise o responsável (atualmente é o Rafael Nogueira), que o B2B está pronto e aguarde ele publicar.
+        <br> Depois que for publicado, vá no PBI (neste
+        <a
+          class="link_url"
+          href="https://app.powerbi.com/Redirect?action=OpenReport&appId=cc9ca768-d5c5-4069-b105-e672b2b99311&reportObjectId=9d5ae629-4fef-46a6-afbf-f18ca64b8219&ctid=9744600e-3e04-492e-baa1-25ec245c6f10&reportPage=ReportSection296cda81f2e0768cb834&pbi_source=appShareLink&portalSessionId=b84e7012-2feb-42a4-9c28-ef0b52cfc02c"
+          target="_blank"
+          >link) e valide as informações (a data, a quantidade total da vivo e da regional SP, comparando com o outro PBI do primeiro passo. E a quantidade de FSP que há dentro de SP na tabela 'Visão por Seção', com o número que foi contado no excel no passo 14).
+<br> Estando tudo correto, vá no grupo do teams ('Relatorios & DBM') e envie a mensagem a seguir, colocando a data correta de acordo com o PowerBI:
+        <br /><br />
+        Base B2B atualizada - informações até 14/11
+      </li>
+  
+    </ol>
+   
+    <br />*Caso tenha alguma divergência ou algum problema na base falar
+    com Giovanni Caravaggio Guedes Gomes e avisar a Renata.
+
+    <hr />
+
+    *ATUALIZAÇÃO DO POWER POINT PARA COMITÊ - DE SEGUNDA E SEXTA*
+
+    <ol>
+      <li>
+        Vá na pasta do comitê semanal (neste
+        <a
+          class="link_url"
+          href="https://telefonicacorp-my.sharepoint.com/personal/renata_dmatos_telefonica_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Frenata%5Fdmatos%5Ftelefonica%5Fcom%2FDocuments%2FComit%C3%AA%20Semanal&fromShare=true&ga=1"
+          target="_blank"
+          >link)
+        </a>
+        -> 2023 -> mês atual (tipo 'outubro23') -> abra o arquivo do dia atual
+      </li>
+      <li>
+        Vá no slide ‘Performance B2B’ (Costuma ficar aproximadamente no slide
+        60)
+      </li>
+      <li>
+        Abra o PBI B2B (neste
+        <a
+          class="link_url"
+          href="https://app.powerbi.com/groups/me/apps/cc9ca768-d5c5-4069-b105-e672b2b99311/reports/9d5ae629-4fef-46a6-afbf-f18ca64b8219/ReportSection20376198a2e5e2ddd376?experience=power-bi"
+          target="_blank"
+          >link)
+        </a>
+      </li>
+      <li>
+        Substitua os prints dos slides com essa versão atualizada: <br />
+        -visão DU -> tabelas -> visão por território (é a segunda tabela da
+        esquerda, printe somente ela)<br />
+        -visão acumulada -> tabelas -> visão por território (é a segunda tabela
+        da esquerda, printe somente ela)
+      </li>
+      <li>
+        Atualize a data que está escrita no cantinho superior da direita desse
+        slide
+      </li>
+      <li>Avise no grupo 'Comite e PS' que o slide de B2B está ok</li>
+    </ol>
+
+    <hr />
+    **TODO COMEÇO DE MÊS**<br />
+    Ao início de um novo mês é necessário fazer alguns ajustes nos arquivos,
+    somente uma vez.
+    <ol>
+      <li>
+        Primeiro crie a pasta para o novo mês, em sequência das pastas
+        anteriores e copie todos os arquivos do mês passado para a pasta do mês
+        atual.
+      </li>
+      <li>
+        Vá no excel ‘Base B2B NEW’ -> na aba ‘CALCULO DO DU’ -> copie as colunas
+        B, C, D e as 3 ultimas linhas e cole abaixo (isso vai criar uma tabela
+        nova para o mês atual, assim como acima, dos meses anteriores).
+      </li>
+
+      <li>
+        Vá na pasta .../Vanessa/Relatorios diários/ auxiliares/Apoio/2023 e abra
+        o arquivo do excel ‘DU 2023 VIC’ -> vá na aba ‘Detalhados DUs (2023)’ ->
+        vá até o mês atual e copie as 3 linhas (LLPP, REVENDA e PAP) (todos os
+        dias, do primeiro ao ultimo do mês, menos a ultima coluna de 'total') e
+        cole na coluna E do ‘CALCULO DO DU’
+      </li>
+      <br />*OBS: esse processo vai montar a estrutura para o mês atual, e os
+      valores de cada dia vão sendo preenchidos por fórmula dinâmica não sendo
+      necessário mais nenhuma alteração após isso estar feito
+      <li>
+        Ainda neste excel ‘Base B2B NEW’, vá na aba ‘Apoio’ e copie as 4 ultimas
+        linhas das colunas L e M e cole logo abaixo, mudando o número do mês
+        para o atual. E para a coluna N, preencha com os valores da aba ‘CALCULO
+        DO DU’, copie os 3 valores que estão na coluna C do mês atual (que no
+        momento vão estar zerados mesmo) e cole no local (e também copie o valor
+        que estiver no PAP e cole na linha do PRIME PRESENCIAL)
+      </li>
+      <li>
+        E por fim, ainda na aba de ‘Apoio’, nas colunas H, I, J desça uma linha
+        os valores. (Ou seja, faça uma linha nova para o mês atual, por exemplo
+        '202311', a linha em amarelo onde é colocada a data todos os dias desce
+        para ficar abaixo desse mês novo e os valores que estão nas colunas I e
+        J também descem uma linha, assim fica o mês atual com valor ‘Real’ e os
+        3 meses anteriores como valor ‘Tri’)
+      </li>
+    </ol>
+  </body>
+  <div class="index">
+    <hr />
+    <a href="index.html">Voltar ao índice</a>
+  </div>
+  <footer class="rodape">
+    Jaqueline Rossetto Scagliante<br />
+    contato: jaqueline.rscagliante@telefonica.com
+  </footer>
+</html>

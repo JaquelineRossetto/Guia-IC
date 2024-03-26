@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Upgrade e Downgrade</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Upgrade e downgrade</h1>
+    <hr />
+
+    <ol>
+      <li>
+        Vá no site ‘DBM Regional’ (neste
+        <a
+          class="link_url"
+          href="https://www.dbmregionalsp.redecorp.br/login"
+          target="_blank"
+          >link)
+        </a>
+        -> móvel -> upgrade e downgrade -> download (irá usar esse arquivo no
+        passo 4)
+      </li>
+
+      <li>
+        Vá na pasta ‘Bases’ -> 2023 -> mês atual (tipo 09 Setembro) -> Upgrade
+        -> abre o arquivo do excel ‘UPGRADE Setembro’
+      </li>
+
+      <li>
+        Neste excel, abra a aba ‘Dinamica UP’ -> selecione e copie as linhas e
+        colunas da primeira tabela (das linhas 4 a 12) -> cole na tabela 2 (nas
+        linhas 19 a 27) e estique o restante da linha dos dias da semana para
+        ficar alinhada com as datas.
+      </li>
+
+      <li>
+        Vá na aba ‘UPGRADE 23’ -> selecione a tabela toda (a partir da linha 2)
+        e delete ela -> Abra o arquivo que foi baixado da DBM no passo 1
+        (chamado ‘UP_BASE_VIC’) -> selecione e copie a tabela toda desse arquivo
+        -> cole no outro excel onde foi deletado a tabela. <br />
+        *Todas as colunas que estiverem marcadas em amarelo precisam ser
+        tratadas
+      </li>
+
+      <li>
+        Selecione a coluna ‘DT_MVMT’ (clique na letra em que está essa coluna
+        que já irá selecionar tudo) -> nas ferramentas do excel vá em ‘Dados’ ->
+        ‘texto para colunas’ e confirme. Repita esse mesmo processo para as
+        colunas em amarelo: ‘ADABAS’, ‘ID_CHVE_CLNT’, ‘DDD’, ‘VL_PLNO_ATUL’,
+        ‘DELTA’, ‘RECEITA’, ‘VL_PLNO_2’, ‘DDD PDV’, ‘ADABAS TRATADO’, ‘DATA’,
+        ‘AT’
+      </li>
+
+      <li>
+        Vá na coluna ‘BJ’ -> classificação - ‘classificar de A a Z’ -> repita
+        isso para a coluna ‘BI’ -> remova o filtro da 'BI' -> selecione apenas
+        ‘FSP’
+      </li>
+      <!-- Agora vai na coluna ‘BJ’ -> clica na setinha do lado do nome da coluna
+        -> clica em ‘classificar de A a Z’ -> repete isso para a coluna ‘BI’ ->
+        Ai clica de novo na setinha do lado do nome da coluna ‘BI’, remove tudo
+        que estiver marcado no filtro -> seleciona ‘FSP’ e da ok -->
+
+      <li>
+        Remova o filtro da coluna ‘BJ’ também-> selecione apenas o filtro
+        ‘(Vazias)’ -> preencha as células filtradas com 'FSP' -> remova todos os
+        filtros
+      </li>
+
+      <li>
+        Vá na coluna ‘BK’ -> classificação - ‘classificar de A a Z’ -> remova
+        todos os filtros selecionados e selecione apenas ‘(Vazias)’ -> preencha
+        as células filtradas com apenas um '-' (sinal de menos, ao lado do sinal
+        de igual do teclado) -> remova todos os filtros
+      </li>
+
+      <li>
+        Vá na coluna ‘BO’ -> classificação- ‘classificar de A a Z’ -> remova os
+        filtros e selecione apenas ‘SELFIE EQUILIBRIO’ -> na primeira célula
+        apague o que estiver escrito e escreva ‘SELFIE UPGRADE’ e aplique em
+        todas as linhas dessa coluna -> remova todos os filtros
+      </li>
+
+      <li>
+        Nessa mesma coluna ‘BO’ classifique novamente - ‘classificar de A a Z’
+        -> agora selecione só o filtro ‘EQUILIBRIO’ -> substitua o que estiver
+        escrito por ‘UP GRADE’ (escreve-se separado mesmo) e aplique em todas as
+        linhas dessa coluna
+      </li>
+
+      <li>
+        Vá na aba do excel ‘Dinamica UP’ -> clique com o direito na primeira
+        tabela -> 'atualizar' -> aguarde gerar os dias novos e arraste a linha
+        dos dias da semana para alinhar com as datas novas -> salve o arquivo ->
+        vá no site ‘DBM Regional’ (mesmo link do passo 1) -> móvel -> upgrade e
+        downgrade -> aprovar resultado
+      </li>
+
+      <li>
+        Volte no excel ‘UPGRADE Setembro’ -> aba ‘UPGRADE 23’ -> clique com o
+        direito no nome dessa aba -> ‘mover ou copiar’ -> escolha ‘nova pasta’ e
+        ‘criar uma cópia’ -> vai ser gerado um arquivo novo no excel, nele vá em
+        ‘salvar como’ -> salve na pasta ‘Bases’ onde fica o excel ‘UPGRADE
+        Setembro’ -> mude o tipo do arquivo para ‘Texto (separado por
+        tabulações)’ -> substitua o arquivo .txt que já havia lá por esse novo
+        (‘Up base.txt’)
+      </li>
+
+      <li>
+        Vá no site ‘HUB – Atualização’ (neste
+        <a
+          class="link_url"
+          href="https://solucoesintegradassp.vivo.com.br/login/?Endereco=/portal_atualizacao"
+          target="_blank"
+          >link) </a
+        >-> aba de ‘Móvel’ -> Upgrade -> exclua o arquivo que já estava lá
+        (chamado ‘Up base.txt) -> vá na setinha verde com o sinal de ‘+’ e
+        selecione o arquivo novo de mesmo nome (‘Up base.txt’) -> selecione a
+        data correta em ‘período’ (dá para ver essa data no site do DBM, onde
+        faz o download e visualiza ‘upgrade e downgrade’ estará escrito, por
+        exemplo, ‘Realizado: 01/09 à 23/09’, nesse caso coloca-se o período como
+        dia 23/09’) -> clique em ‘carregar arquivo’ (em azul) -> ‘atualizar
+        perfil’ (em verde) -> atualize a página com F5 e verifique se está
+        marcando corretamente que a atualização foi feita
+      </li>
+      *OBS. o processo de aprovar e colocar no site do HUB é bem parecido para
+      móvel e upgrade
+    </ol>
+  </body>
+  <div class="index">
+    <hr />
+    <a href="index.html">Voltar ao índice</a>
+  </div>
+  <footer class="rodape">
+    Jaqueline Rossetto Scagliante<br />
+    contato: jaqueline.rscagliante@telefonica.com
+  </footer>
+</html>

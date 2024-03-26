@@ -1,0 +1,190 @@
+* {
+  background-image: url(Imagens/Vivo_Template.png);
+  scroll-behavior: smooth;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(73, 10, 132);
+  color: white;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+#titulo {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  text-align: center;
+  margin-left: 15%;
+}
+#vivinho {
+  display: flex;
+  float: right;
+  width: 80px;
+  height: 110px;
+  padding-right: 100px;
+}
+
+.indice {
+  font-size: 125%;
+  text-align: center;
+  margin-left: 15%;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  font-weight: bolder;
+  color: yellow;
+  font-size: 110%;
+  position: absolute;
+}
+
+li {
+  padding: 9px;
+}
+
+ul {
+  margin: 10px;
+}
+
+.sublista {
+  font-size: 82%;
+}
+
+.siglas {
+  font-size: 85%;
+  font-weight: normal;
+  padding: 8px 50px 10px 15px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.explicacao {
+  margin: 10px;
+  padding: 10px;
+}
+
+.nota_detalhe {
+  font-size: 12px;
+}
+
+.lista {
+  padding: 8px 30px 5px 8px;
+}
+
+.box {
+  text-decoration: none;
+  list-style: none;
+  border-color: white;
+  border-style: solid;
+  width: fit-content;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.link_url:hover {
+  color: yellow;
+  position: relative;
+}
+
+/* barra de pesquisa 
+.btn_pesquisar {
+  border-radius: 8px;
+}*/
+
+/*footer*/
+.index a:hover {
+  position: static;
+}
+
+.rodape {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* B2B */
+.img_tutorial {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.img_tutorial:hover {
+  width:100%;
+}
+
+.Simg_tutorial{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Simg_tutorial:hover {
+  width:80%;
+}
+
+#passo4B2B{
+  display:flexbox;
+  margin-left: 30px;
+  margin-right: 40px;
+  width: 40%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#passo4B2B:hover {
+  width:80%;
+}
+
+#passo41B2B{
+  display: flexbox;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  width: 40%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+/* Mapeamentos */
+
+table, td, th {
+  border: 1px solid aliceblue;
+ border-collapse: collapse;
+ padding: 5px;
+ text-align: center;
+ font-size: 95%;
+}
+
+
+
+
+

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Validação da móvel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Validação da móvel</h1>
+    <hr />
+    <article class="explicacao">
+      <ol>
+        <li>
+          Espere o responsável¹ pelo processo de atualizações avisar no chat do
+          teams ('Equipe Indicadores Comerciais - IC') que a validação da móvel
+          já pode ser feita.
+          <br />
+          <p class="nota_detalhe">
+            ¹atualmente o responsável é: Rafael Dos Santos Nogueira Da Silva
+          </p>
+        </li>
+        <li>
+          Abra o site da DBM Regional SP (neste
+          <a
+            class="link_url"
+            href="https://www.dbmregionalsp.redecorp.br/login"
+            target="_blank"
+            >link)
+          </a>
+          -> móvel -> ‘Altas, Migras e Reabil’ -> download -> deixe reservado,
+          pois irá usar no passo 6.
+        </li>
+
+        <li>
+          Abra a pasta ‘Base’ que fica salva no onedrive -> 2023 -> mês atual
+          (tipo '09 Setembro') -> Altas + Migras -> arquivo ‘Mes Atual Setembro’
+          -> abrir no excel
+        </li>
+
+        <li>
+          Neste excel vá nas aba 'CHECK' -> selecione as informações da primeira
+          tabela desde de ‘data’ até ‘total’ (da linha 9 a 19, sendo todas as
+          colunas ou até a coluna do dia que solicitarem caso ocorra corte na
+          base) e copie -> cole na tabela 2 que está logo abaixo -> na linha 6
+          apague o que estiver escrito ‘parcial, real’ e também as contas que
+          estão em colunas separadas e sem datas (faça isso nas 3 tabelas).
+        </li>
+
+        <li>
+          Descendo a tela vai haver outra tabela, e ela tem que estar toda
+          preenchida de verde, com 0% nas linhas e colunas (se der outro valor a
+          cor também ficará alterada, e por ter alteração terá que avisar os
+          responsáveis e investigar o que aconteceu) -> estique as linhas da
+          direita até o dia/coluna que consta na tabela de cima para ficarem com
+          as mesmas datas.
+        </li>
+        **Faz esse processo para as duas tabelas (Volume e Receita).**
+        <br /><br />
+        <li>
+          O arquivo baixado da DBM Regional SP se chama “MÊS_ATUAL”, descompacte
+          a pasta, copie o arquivo dela e cole na pasta ‘Base’, substituindo o
+          arquivo de mesmo nome que já havia lá (é no mesmo local onde fica o
+          arquivo ‘Mês Atual Setembro’).
+        </li>
+
+        <li>
+          Volte no arquivo do excel ‘Mês atual Setembro’, e vá na aba inferior
+          ‘Base atual’ -> clique com o direito em qualquer local e ‘atualizar’
+          -> volte na aba ‘CHECK’ -> clique em qualquer item da primeira tabela
+          -> 'atualizar' (isso vai gerar novas colunas nas tabelas dinâmicas).
+          <br />
+          **Neste momento vão aparecer bastante colunas em amarelo/vermelho (que
+          anteriormente estavam verdes), que são as alterações que ocorreram de
+          um dia para o outro (o que é normal, a não ser que seja um número
+          muito divergente).**
+          <br /><br />
+        </li>
+
+        <li>
+          Fazer a soma. Para isso vá em uma coluna vazia ao lado da tabela e use
+          a fórmula, somando os valores dos itens da primeira tabela do dia 01
+          até um dia anterior ao dia atual (ex: se estamos no dia 25/09, a soma
+          deve ser do dia 01/09 até o dia 24/09). Repete isso em todas as linhas
+          e também na coluna debaixo. Em outra célula vazia calcule a diferença
+          entre as somas que acabou de fazer das duas tabelas.
+          <br />
+          *Faz isso nas duas tabelas! (De volume e de receita)*
+        </li>
+
+        <li>
+          Feito isso, se os resultados estiverem corretos vá no site ‘DBM
+          Regional SP’ -> móvel -> ‘Altas, migras e reabil’ -> visualizar ->
+          aprovar resultados
+        </li>
+
+        <li>
+          Avise no grupo do teams ‘Equipe Indicadores Comerciais - IC’ que está
+          concluido. Escreva:
+          <br /><br />
+          Móvel
+          <br />
+          Real: 01/09 até 15/09
+          <br />
+          Parcial: 16/09 até 20/09
+          <br />*coloque as datas de acordo com o que está no excel, na aba
+          'PBI'*
+        </li>
+      </ol>
+      <br />
+      <br />
+      <br />
+      <hr />
+      ***VALIDAÇÃO DAS INFORMAÇÕES***
+      <ol>
+        <li>
+          Esperar avisarem no chat do teams que é para validar as informações.
+          <br />
+          Para isso abra o PowerBI 'Indicadores regionais' (neste
+          <a
+            class="link_url"
+            href="https://app.powerbi.com/groups/me/apps/cc9ca768-d5c5-4069-b105-e672b2b99311/reports/2cd7f1bc-cc09-464a-bf02-b1cc5391e438/ReportSection3ddb3b3251a30d3320e6?ctid=9744600e-3e04-492e-baa1-25ec245c6f10&experience=power-bi"
+            target="_blank"
+            >link) </a
+          >, vá em ‘Móvel’ -> no slide que tem a foto verifica se as datas da
+          esquerda batem com o que está no excel -> abre a opção da direita
+          escrito ‘visão acumulada – comitê’ -> na parte superior da tela há
+          vários quadradinhos de acesso rápido, vai no ‘Altas + Migras’ (e
+          confirma também no ‘período’ se a data está correta).
+        </li>
+        <br />
+        <li>
+          Verifique em ‘visão por território’ -> SP -> ‘canais presenciais’ as
+          linhas de ‘volume’ e ‘receita’, esses valores precisam batem com o que
+          tem no excel ‘Mês atual Setembro’ (na aba 'PBI'). Pode existir uma
+          diferença pequena de valor entre eles, mas caso seja muito divergente
+          precisa avisar os responsáveis e investigar o porquê dessa diferença.
+        </li>
+      </ol>
+      <br />
+      <br />
+      <br />
+      <hr />
+      ***FAZER UPLOAD NO SERVIDOR***
+      <ol>
+        <li>
+          Depois de validado, vá de novo no excel -> aba ‘base atual’ -> clique
+          com o direito -> mover ou copiar -> escolha ‘nova pasta’ e ‘criar uma
+          cópia’ -> isso vai gerar um excel novo e já irá abri-lo. Neste arquivo
+          gerado, vá nas ferramentas de salvamento -> salvar como -> coloque na
+          mesma pasta da base onde estão os outros arquivos usados nesse
+          tutorial -> mude o tipo do arquivo que vai ser salvo para ‘texto
+          (separado por tabulações)’, e substitui o arquivo ‘Base Atual’ que já
+          existia na pasta.
+        </li>
+
+        <li>
+          Entre no site ‘HUB – atualização’ (neste
+          <a
+            class="link_url"
+            href="https://solucoesintegradassp.vivo.com.br/login/?Endereco=/portal_atualizacao"
+            target="_blank"
+            >link)
+          </a>
+          -> móvel (na barra superior) -> Altas -> caixa verde, chamada ‘Envio
+          de arquivos’ -> delete o arquivo que está lá, chamado ‘base atual.txt’
+          -> escolha no ‘período’ a data da última parcial que temos (é possível
+          confirmar essa data na aba 'PBI' do excel) -> selecionar arquivo (é o
+          símbolo de ‘+’ verdinho) -> Encontre na pasta da base o arquivo que
+          acabou de fazer no passo acima (Base Atual.txt) e dê OK -> espere a
+          barra carregar até o final-> clique em ‘carregar arquivo’ (botão azul)
+          -> atualizar portal (botão verde) -> atualize a página com F5 e role
+          vá até o final da página, onde vai estar um log com informações das
+          modificações do servidor -> verifique se está marcado corretamente o
+          nome, quantidade de linhas e data.
+        </li>
+
+        <li>Volte no chat do teams e avise que a móvel está validada.</li>
+      </ol>
+    </article>
+  </body>
+  <div class="index">
+    <hr />
+    <a href="index.html">Voltar ao índice</a>
+  </div>
+  <footer class="rodape">
+    Jaqueline Rossetto Scagliante<br />
+    contato: jaqueline.rscagliante@telefonica.com
+  </footer>
+</html>

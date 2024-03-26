@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Devices</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Validação de devices - Acessórios e terminais</h1>
+    <hr />
+    <article>
+      <h2>Acessórios</h2>
+      <ol>
+        <li>
+          Espere o responsável¹ pelo processo de atualizações avisar no chat do
+          teams ('Equipe Indicadores Comerciais - IC') que a validação de
+          devices já pode ser feita.
+          <br />
+          <p class="nota_detalhe">
+            ¹atualmente o responsável é: Rafael Dos Santos Nogueira Da Silva
+          </p>
+        </li>
+        <li>
+          Abra o site da DBM Regional SP (neste
+          <a
+            class="link_url"
+            href="https://www.dbmregionalsp.redecorp.br/login"
+            target="_blank"
+            >link)
+          </a>
+          -> Terminais -> Acessórios -> download -> deixe reservado, pois irá
+          usar no passo 7.
+        </li>
+        <li>
+          Abra a pasta ‘Bases’ -> 2023 -> mês atual (tipo '09 Setembro') ->
+          devices -> ‘Acessórios Setembro 23’ -> abrir no excel.
+        </li>
+        <li>
+          Vá na aba ‘Comparativo’ -> selecione e copie as linhas 4, 5 e 6
+          (valores, soma de qtde faturada e soma de valor nf) e todas as suas
+          colunas até o último dia.
+        </li>
+        <li>
+          Cole na tabela debaixo (nas linhas 18, 19 e 20) -> estique essas
+          linhas do final para igualar os dias como o total que temos acima ->
+          verifique se a terceira tabela está toda verde e zerada (tabela das
+          linhas 29, 30 e 31).
+          <br />*a segunda tabela serve como um comparativo que vamos fazer da
+          leitura anterior com a atual, e a terceira tabela é para comprovar que
+          não há diferença entre as duas primeiras tabelas. Só podemos
+          prosseguir para o próximo passo se ela estiver toda zerada.
+        </li>
+        <li>
+          Apague os números da soma e diferença que foram feitas anteriormente
+          (são as colunas na direita que estão separadas do resto e sem datas) e
+          vá na aba ‘ACESSÓRIOS’ -> delete todas as informações que estavam
+          nessa aba.
+        </li>
+        <li>
+          Abra o arquivo do excel que baixou do DBM (chamado ‘ACESSÓRIOS’) ->
+          selecione todas as linhas e copie.
+        </li>
+        <li>
+          Volte no excel da pasta ‘Bases’ -> vá na aba ‘ACESSÓRIOS’ -> cole ->
+          vá na aba ‘Comparativo’ -> clique com o direito em qualquer lugar da
+          primeira tabela -> atualizar -> na nova coluna que surgirá arraste
+          para o lado para preencher as células que tiverem ficado vazia.
+          <br />*Isso vai atualizar a tabela com os valores novos do banco de
+          dados.
+        </li>
+        <li>
+          Verifique na terceira tabela o que terá de diferente/novo para saber
+          se são números aceitáveis ou se há uma diferença muito grande.
+          <br />
+          *OBS sobre as tabelas: no início você copia as informaçõess da tabela
+          1 e joga na 2, assim ela fica com os números que tínhamos do dia
+          anterior e isso torna possível comparar com os números de hoje para
+          saber como está sendo a evolução. E a diferença entre as duas tabelas
+          vai ser apresentado na tabela 3 (no início ela vai ficar zerada/verde
+          pois só jogou duas vezes os mesmos números para serem comparados,
+          porém depois de atualizar vai ficar com a tabela 1 para o dia atual, a
+          tabela 2 para o dia anterior e a tabela 3 para a diferença de um dia
+          para o outro).
+        </li>
+        <li>
+          Se os números estiverem aceitáveis, vá em alguma célula em branco ao
+          lado da primeira tabela -> faça a soma utilizando os valores que temos
+          da leitura anterior até o dia 1 do mês (ou seja, soma todos os valores
+          da tabela menos o último dia pois ele é considerado somente leitura
+          parcial). Ex: se a tabela está preenchida até o dia 25/09, a soma
+          utilizará as células do dia 01/09 até o dia 24/09.
+        </li>
+        <li>
+          Repita essa fórmula nas linhas 5, 6, 19 e 20 -> em outra célula vazia
+          faça a diferença entre essas somas que acabamos de fazer (ou seja, o
+          valor da linha 5 menos o valor da linha 19, e o valor da linha 6 menos
+          o valor da linha 20) -> verifique se o resultado está com números
+          aceitáveis ou se há uma variação muito grande.<br />
+        </li>
+        <li>
+          Volte na aba ‘PBI’ -> na linha ‘DATA NF’ abra o filtro e verifique se
+          estão marcados todos os dias (e se faltar algum, principalmente o dia
+          atual, marque eles). Isso vai atualizar a tabela para mostrar o ticket
+          médio corretamente.
+        </li>
+        <li>
+          Salve tudo -> volte na página do DBM Regional -> Terminais ->
+          Acessórios -> visualizar -> aprovar resultado
+        </li>
+      </ol>
+    </article>
+
+    <hr />
+    <article>
+      <h2>Terminais</h2>
+
+      <ol>
+        <li>
+          Espere o responsável¹ pelo processo de atualizações avisar no chat do
+          teams ('Equipe Indicadores Comerciais - IC') que a validação de
+          devices já pode ser feita.
+          <br />
+          <p class="nota_detalhe">
+            ¹atualmente o responsável é: Rafael Dos Santos Nogueira Da Silva
+          </p>
+        </li>
+        <li>
+          Abra a pasta ‘Bases’ -> 2023 -> mês atual (tipo '09 Setembro') ->
+          devices -> ‘Mês atual Devices Setembro’ -> abra no excel
+        </li>
+        <li>
+          Vá na aba ‘DIN’ -> na primeira tabela selecione e copie das linhas 5
+          até 13 e todas as suas colunas até o último dia -> cole na tabela
+          debaixo -> arraste as linhas das última colunas nas 3 tabelas até o
+          final para completar os dias que faltam (menos as linhas de revenda –
+          10, 11, 31 e 32)
+        </li>
+        <li>
+          Vá na aba ‘VIC_ATIVAÇÃO’ -> selecione todos os itens da tabela e
+          apague -> vá no arquivo do excel baixado anteriormente (chamado
+          ‘TERMINAIS’) -> selecione a tabela toda e copie -> cole no outro excel
+          no lugar da tabela que foi deletada -> vá na aba ‘DIN’ -> clique com o
+          botão direito em qualquer item da primeira tabela -> atualizar ->
+          arraste as linhas que ficaram vazias para serem preenchidas (menos as
+          de revenda, como no passo 3)
+          <br />
+          *isso vai trazer os valores e datas atualizados, lembrando que para
+          terminais verifica-se o LLPP de dois dias atrás (n-2) e revendas o de
+          4 dias atrás (n-4) então as datas mais recentes que isso vão ficar em
+          branco mesmo.
+        </li>
+        <li>
+          Verifique na terceira tabela as mudanças e se a diferença de valores
+          está aceitável -> se estiverem OK, faça a soma de todos os dias menos
+          o último (ex: se estivermos no dia 25/09 é para somar todos os valores
+          das células do dia 01/09 até o dia 24/09) -> repetir a fórmula nas
+          linhas 7, 8, 10 e 11 e depois na segunda tabela também repetir nas
+          linhas 28, 29, 31 e 32
+        </li>
+        <li>
+          Em outra célula vazia faça a diferença entre essas somas que acabamos
+          de concluir (ou seja, o valor da linha 7 menos o valor da linha 28; o
+          valor da linha 8 menos o valor da linha 29; o valor da linha 10 menos
+          o valor da linha 31; o valor da linha 11 menos o valor da linha 32) ->
+          verifique se a diferença está aceitável ou se há uma variação muito
+          grande.
+        </li>
+        <li>
+          Vá na aba ‘Check PBI’ -> na linha ‘DT_MVMT_LINHA’ abra o filtro e
+          verifique se estão marcados todos os dias (e se faltar algum,
+          principalmente o dia atual, marque eles). Isso vai atualizar a tabela
+          para mostrar o ticket médio corretamente.
+        </li>
+        <li>
+          Salve tudo -> volte na página do DBM Regional -> Terminais ->
+          Terminais -> visualizar -> aprovar resultado
+        </li>
+      </ol>
+    </article>
+    <hr />
+
+    <article>
+      Depois de fazer esse processo para acessórios e terminais, vá no grupo do
+      teams ‘Equipe Indicadores Comerciais - IC’ e escreva:
+      <br /><br />
+      Devices aprovado no portal
+      <br />Terminais: LLPP: 25/09 <br />Revenda: 23/09 <br />Acessórios: 25/09
+      <br />*Coloque as datas corretas conforme estão nas tabelas, lembrando que
+      sempre validamos 2 e 4 dias anteriores a data atual* <br /><br /><br />
+      <hr />
+      ***VALIDAÇÃO DAS INFORMAÇÕES***
+      <ol>
+        <li>
+          É feita somente após os responsáveis avisarem no chat do teams que já
+          está liberado para validar as informações.
+          <br />
+          Para isso abra o PowerBI 'Indicadores regionais' (neste
+          <a
+            class="link_url"
+            href="https://app.powerbi.com/groups/me/apps/cc9ca768-d5c5-4069-b105-e672b2b99311/reports/dd4fbe1e-9530-4385-bd6b-e509222e8173/ReportSection3ddb3b3251a30d3320e6?ctid=9744600e-3e04-492e-baa1-25ec245c6f10&experience=power-bi"
+            target="_blank"
+            >link)
+          </a>
+          -> aba ‘Eletrônicos’ -> na página com a foto verifique se as datas
+          estão batendo com o que está no excel.
+        </li>
+        <li>
+          Estando OK, abra a opção chamada ‘Visão acumulada’ -> comitê ->
+          verifique se no canto superior direito o período está correto ->
+          selecione o filtro ‘Acessórios’ (no centro da tela na parte superior)
+        </li>
+        <li>
+          Volte no excel ‘Acessorios setembro 23’, na aba ‘PBI’ -> verifique se
+          os valores estão iguais ou pelo menos bem próximos do que está no
+          slide do PowerBI (na parte de Visão por território -> SP -> canais
+          presenciais, verificando se volume e receita batem com o que está
+          escrito no arquivo do excel)
+        </li>
+        <li>
+          Em seguida abra o filtro de ‘Terminais’ que tem no centro da tela na
+          parte superior -> vá na parte de ‘visão por território’ -> SP ->
+          canais presenciais e verifique se volume e receita batem com o que tem
+          no arquivo do excel (das linhas 12 e 13, que estão em negrito, na aba
+          de ‘Check PBI’)
+        </li>
+        <li>
+          Na mesma tela do PowerBI, desça um pouco e vá na parte de ‘visão por
+          canal’ -> SP -> LLPP e Revenda e verifique se volume e receita também
+          batem com o que tem no arquivo do excel (nas linhas 7 e 8, 10 e 11
+          respectivamente)
+        </li>
+        <li>
+          Se os números estiverem ok, vá no grupo do teams ‘Equipe Indicadores
+          Comerciaisc- IC’ e avise que devices está validado.
+        </li>
+        <br />*De segunda e sexta-feira em especial é necessário colocar as
+        mensagens também em um outro chat do teams, o ‘Comitê e PS’. Nos outros
+        dias da semana já basta colocar no grupo de indicadores.
+      </ol>
+    </article>
+  </body>
+  <div class="index">
+    <hr />
+    <a href="index.html">Voltar ao índice</a>
+  </div>
+  <footer class="rodape">
+    Jaqueline Rossetto Scagliante<br />
+    contato: jaqueline.rscagliante@telefonica.com
+  </footer>
+</html>
