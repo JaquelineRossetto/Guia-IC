@@ -3,38 +3,61 @@
   scroll-behavior: smooth;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size:cover;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 body {
-  background-color: rgb(73, 10, 132);
-  color: white;
+  color: rgb(61, 5, 61);
   font-weight: bold;
   font-size: 110%;
 }
 
+hr {
+  height: 1px;
+  margin: 50px 0;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, #333333), to(rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+  background: linear-gradient(left, rgba(0, 0, 0, 0), #333333, rgba(0, 0, 0, 0));
+  border: 0;
+}
+hr:after {
+  display: block;
+  content: '';
+  height: 30px;
+  background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 116, color-stop(0%, #cccccc), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -moz-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-radial-gradient(center top, farthest-side, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+  background-image: radial-gradient(farthest-side at center top, #cccccc 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+
 #titulo {
+  color: purple;
   font-size: 60px;
   font-weight: bold;
   text-align: right;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   margin-top: 20px;
-  text-align: center;
-  margin-left: 15%;
+  text-align: left;
+  margin-left: -10px;
 }
 #vivinho {
+  margin-left: 18%;
   display: flex;
-  float: right;
+  float: left;
   width: 80px;
   height: 110px;
-  padding-right: 100px;
+  padding-right: 20px;
 }
 
 .indice {
   font-size: 125%;
-  text-align: center;
-  margin-left: 15%;
+  text-align: left;
+  margin-left: 43%;
 }
 
 h1 {
@@ -49,17 +72,21 @@ a {
 
 a:hover {
   font-weight: bolder;
-  color: yellow;
+  color: orange;
   font-size: 110%;
   position: absolute;
 }
 
 li {
-  padding: 9px;
+  padding: 1px;
 }
 
 ul {
   margin: 10px;
+}
+
+ul li {
+  margin-bottom: 5px;
 }
 
 .sublista {
